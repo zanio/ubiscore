@@ -1,0 +1,130 @@
+@import "_components.scss";
+@import "_typography.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500&family=Outfit:wght@100;200;500;600;700&display=swap');
+:root {
+    --primary: theme('colors.primary.main');
+    --gray: theme('colors.gray.main');
+
+}
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Epilogue', sans-serif;
+    background: #E5E5E5;
+
+}
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #E0E2E7;
+    border-radius: 20px;
+}
+
+
+
+
+
+input[type='date']::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    /*background: url(./assets/image/homepage/date_icon.svg) no-repeat;*/
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input:checked + div {
+    @apply border-label;
+  }
+  input:checked + div svg {
+    @apply block;
+  }
+
+/* Checkbox Switch styles */
+/* Toggle A */
+.switch input:checked ~ .dot {
+    transform: translateX(100%);
+    background: #A353AA;
+}
+
+.custom-label input:checked + .svgIcon {
+    display: block !important;
+}
+.border-r-1{
+    border-right: 1px solid #c6c6c6;
+}
+.border-b-1{
+    border-bottom: 1px solid #c6c6c6;
+}
+.border-t-1{
+    border-top: 1px solid #c6c6c6;
+}
+
+input[type=text]:disabled,
+button:disabled,
+textarea:disabled {
+    background-color: #eee;
+    color: grey;
+    cursor: not-allowed;
+}
+
+.notie-container {
+    font-size:1rem !important;
+}
+.notie-textbox {
+    padding:10px 20px !important;
+}
+
+
+
+svg {
+    display: block;
+    position: relative;
+}
+.conical-image{
+    background-image: url('../public/polygon-ele.png');
+}
+.eclipse-image{
+    background-image: url('../public/Ellipse.png');
+    background-position: bottom 69px right 54px;    
+}
+
+.carousel-wrapper {
+    width:100%;
+    height:100%;
+    
+    .control-dots {
+            position: absolute !important;
+            text-align:left !important;
+            padding-left: 0 !important;
+          }
+      
+   
+        }
