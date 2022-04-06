@@ -41,8 +41,10 @@ const Home: NextPage = () => {
    */
   const handleSubmitToServer = (values:Record<string, unknown>) => {
     setIsLoading(true);
+    // remove trailing spaces from key value pairs
+   const body = StringController.sanitizeObject(values)
     setTimeout(() => {
-      console.log(values)
+      console.log(body)
       setIsSubmitted(true)
       setIsLoading(false);
 

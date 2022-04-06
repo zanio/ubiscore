@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import { Carousel } from 'react-responsive-carousel';
 
+
 const UniScoreCarousel = ()=>{
     const renderCustomIndicator = (onClickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void, 
     isSelected: boolean, index: number, label: string):React.ReactNode =>{
@@ -24,8 +25,9 @@ const UniScoreCarousel = ()=>{
     
     return (
         <div className="carousel-wrapper w-full eclipse-image bg-transparent bg-no-repeat">
-        <Carousel showArrows={false} showStatus={false}
+        <Carousel showArrows={false} showStatus={false} autoPlay infiniteLoop
         renderIndicator={renderCustomIndicator}>
+            
             <div className="flex flex-col space-y-3 text-left">
                 <h2 className="text-white font-bold text-xl ">Jerrome Bell</h2>
                 <span className="text-base font-medium text-white opacity-50">Product Desginer</span>
