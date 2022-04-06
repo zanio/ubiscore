@@ -13,7 +13,12 @@ yarn dev
 
 ## Run test:
 ```
-yarn dev
+yarn test
 ```
+
+## The application
+
+![Demo](Screenshot.png?raw=true "Screenshot")
+
 
 
