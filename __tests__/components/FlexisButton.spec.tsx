@@ -10,7 +10,7 @@
  describe("Button", () => {
  
      it("should render button with provided text", () => {
-         render(<Button  isLoading={false} type="submit" onClick={()=>(e) => console.log('clicked', e)} />)
+         render(<Button  isLoading={false} type="submit" onClick={(e) => console.log('clicked', e)} />)
          const element = screen.getByRole('button')
          expect(element).toBeInTheDocument();
      });
