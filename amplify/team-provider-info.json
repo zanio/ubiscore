@@ -1,0 +1,23 @@
+{
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ubiscore-staging-185329-authRole",
+            "UnauthRoleArn": "arn:aws:iam::735846931167:role/amplify-ubiscore-staging-185329-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::735846931167:role/amplify-ubiscore-staging-185329-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-ubiscore-staging-185329-deployment",
+            "UnauthRoleName": "amplify-ubiscore-staging-185329-unauthRole",
+            "StackName": "amplify-ubiscore-staging-185329",
+            "StackId": "arn:aws:cloudformation:us-east-1:735846931167:stack/amplify-ubiscore-staging-185329/7c14cba0-b5d2-11ec-b22e-0a4a02da82c3",
+            "AmplifyAppId": "d1fpas8dy9goeq"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1fpas8dy9goeq",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
