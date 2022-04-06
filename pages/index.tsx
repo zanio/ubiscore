@@ -114,14 +114,14 @@ const Home: NextPage = () => {
           type={'text'}
           name={'organization_website'}
           formik={formik}
-          placeholder={'http://www.example.com'}
+          placeholder={'https://www.example.com'}
           label={'Organization Website URL'}
         />
         <TextInput
           type={'text'}
           name={'work_email'}
           formik={formik}
-          placeholder={'mario.rossi@gmail.com'}
+          placeholder={'mario.rossi@uniscore.com'}
           label={'Work Email'}
         />
          <TextInput

@@ -10,28 +10,37 @@
  describe("Button", () => {
  
      it("should render button with provided text", () => {
-         render(<Button isValid={true} buttonText="Submit" type="submit" handleClick={() => console.log('clicked')} />)
-         const element = screen.getByRole('button', { name: /submit/i })
+         render(<Button  isLoading={false} type="submit" onClick={()=>(e) => console.log('clicked', e)} />)
+         const element = screen.getByRole('button')
          expect(element).toBeInTheDocument();
      });
  
-     it("should render disabled button when isValid prop is false", () => {
-         render(<Button isValid={false} buttonText="Submit" type="submit" handleClick={() => console.log('clicked')} />)
-         const element = screen.getByRole('button', { name: /submit/i })
-         expect(element).toBeDisabled();
-     });
- 
-     it("should render enabled button when isValid prop is true", () => {
-         render(<Button isValid={true} buttonText="Submit" type="submit" handleClick={() => console.log('clicked')} />)
-         const element = screen.getByRole('button', { name: /submit/i })
+     it("should render enabled button when disabled prop is false", () => {
+         render(<Button  disabled={false}  type="submit" onClick={()=>() => console.log('clicked')} />)
+         const element = screen.getByRole('button')
+        //  expect(element).toBeDisabled();
          expect(element).toBeEnabled();
      });
  
+     it("should render disabled button when loading prop is true", () => {
+         render(<Button disabled loadingText="Submitting..." type="submit" onClick={()=>() => console.log('clicked')} />)
+         const element = screen.getByRole('button')
+         expect(element).toBeDisabled();
+     });
+
+     it("should render svg loader when loading is true", () => {
+        render(<Button isLoading={true} loadingText="Submitting..." type="submit" onClick={()=>() => console.log('clicked')} />)
+        const element = screen.getByRole('button')
+        expect(element.getElementsByTagName('svg')).toBeDefined()
+    });
+ 
      it("should call function once on one click", () => {
          const handleClick = jest.fn()
-         render(<Button isValid={true} buttonText="Submit" type="submit" handleClick={handleClick} />)
-         const element = screen.getByRole('button', { name: /submit/i })
+         render(<Button disabled={false} loadingText="Submitting..." type="submit" onClick={handleClick} />)
+         const element = screen.getByRole('button')
          userEvent.click(element)
          expect(handleClick).toHaveBeenCalledTimes(1);
+         expect(element.getElementsByTagName('svg')).toBeDefined()
+
      });
  });

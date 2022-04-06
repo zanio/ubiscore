@@ -5,24 +5,6 @@ class StringController {
   static sanitizeObjectGlobal: Record<string, unknown>;
   
 
-  static capitalizeFirstLetterOfEveryString = (text = '') => {
-    const emptyStringTest = text.trim();
-
-    if (emptyStringTest.length == 0) {
-      return text;
-    } else {
-      const wordsArray = text.toLowerCase().split(' ');
-      const capsArray = wordsArray.map((word) => {
-        return word[0].toUpperCase() + word.slice(1);
-      });
-      return capsArray.join(' ');
-    }
-  };
-
-  static capitalizeFirstLetterOfSentence = (text = '') => {
-    return text.charAt(0).toUpperCase() + text.slice(1);
-  };
-
   /**
    *
    * @param data This is the object containing the key/pair value you would like to sanitize.
@@ -50,13 +32,6 @@ class StringController {
     return santizedInstance;
   };
 
-  static sanitizeString = (value: string): string => {
-    if (!_.isEmpty(value) && typeof value === 'string') {
-      value = value.trim().toLowerCase();
-      return value;
-    }
-    return value;
-  };
 
 }
 
