@@ -9,7 +9,7 @@ import SelectInput from '../components/input/SelectInput'
 import TextInput from '../components/input/TextInput'
 import StringController from '../util/StringController'
 import { ValidationSchema } from '../validation/validation'
-import UniScoreCarousel from '../components/Carousel';
+import UbiScoreCarousel from '../components/Carousel';
 import UniscoreLogo from '../components/Logo';
 import FlexiButton from '../components/FlexiButton';
 
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
         <div className='flex pt-20  md:pb-4 mb-12 md:pl-12 ml-2 flex-col md:items-center  md:flex-row
           md:space-x-3.5 space-y-2.5 md:w-4/5'>
                  
-       <UniScoreCarousel />
+       <UbiScoreCarousel />
 
       </div>
       </div>
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
           type={'text'}
           name={'work_email'}
           formik={formik}
-          placeholder={'mario.rossi@uniscore.com'}
+          placeholder={'mario.rossi@ubiscore.com'}
           label={'Work Email'}
         />
          <TextInput

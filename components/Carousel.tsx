@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Carousel } from 'react-responsive-carousel';
 
 
-const UniScoreCarousel = ()=>{
+const UbiScoreCarousel = ()=>{
     const renderCustomIndicator = (onClickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void, 
     isSelected: boolean, index: number, label: string):React.ReactNode =>{
       
@@ -66,4 +66,4 @@ const UniScoreCarousel = ()=>{
     );
     }
 
-export default UniScoreCarousel;
+export default UbiScoreCarousel;

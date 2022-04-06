@@ -1,5 +1,5 @@
-# Uniscore UI Implementation
-The task is to implement the design made by uniscore designer.
+# Ubiscore UI Implementation
+The task is to implement the design made by ubiscore designer.
 
 ## Install dependencies:
 ```
