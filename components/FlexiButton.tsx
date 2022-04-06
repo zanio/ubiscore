@@ -7,7 +7,7 @@ function FlexiButton(props: {
   className?: string;
   loadingText?: string;
   children?: ReactNode;
-  onClick?: ((e: any) => React.MouseEventHandler) | undefined;
+  onClick?: ((e: any) => void) | undefined;
 }) {
   const modifiedClassName = (props?.className && !props.isLoading) ? props.className : '';
   return (
