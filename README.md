@@ -16,7 +16,7 @@ yarn dev
 yarn test
 ```
 
-## The application
+## [The application](https://ubiscore.vercel.app/)
 
 ![Demo](Screenshot.png?raw=true "Screenshot")
 
