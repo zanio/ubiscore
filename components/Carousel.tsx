@@ -25,7 +25,7 @@ const UbiScoreCarousel = ()=>{
     
     return (
         <div className=" w-full eclipse-image bg-transparent bg-no-repeat">
-        <Carousel showThumbs className='carousel-wrappers'  
+        <Carousel showThumbs={false} className='carousel-wrappers'  
         showArrows={false} showStatus={false} autoPlay infiniteLoop 
         renderIndicator={renderCustomIndicator}>
             
