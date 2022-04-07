@@ -51,8 +51,8 @@ const UbiScoreCarousel = ()=>{
             </div>
 
             <div className="flex flex-col space-y-3 text-left">
-                <h2 className="text-white font-bold text-xl">Chuchil Water</h2>
-                <span className="text-base font-semibold text-white opacity-50">Product Desginer</span>
+                <h2 className="text-white font-bold text-xl">Aniefiok Akpan</h2>
+                <span className="text-base font-semibold text-white opacity-50">Senior Software Engineer</span>
                     
                     <p className="pt-4 font-light text-white text-base pb-16">
                         “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
