@@ -25,7 +25,7 @@ const UbiScoreCarousel = ()=>{
     
     return (
         <div className="carousel-wrapper w-full eclipse-image bg-transparent bg-no-repeat">
-        <Carousel showArrows={false} showStatus={false} autoPlay infiniteLoop
+        <Carousel showArrows={false} showStatus={false} autoPlay infiniteLoop showThumbs={false}
         renderIndicator={renderCustomIndicator}>
             
             <div className="flex flex-col space-y-3 text-left">

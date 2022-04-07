@@ -62,15 +62,7 @@ module.exports = {
           main: '#232325',
         },
         primary: {
-          100: '#e6ebf6',
-          200: '#cdd7ed',
-          300: '#b3c2e4',
-          400: '#9aaedb',
-          500: '#819ad3',
-          600: '#6886ca',
-          700: '#4f72c1',
-          800: '#355db8',
-          900: '#1c49af',
+         
           main: '#141933',
         },
        
@@ -81,29 +73,6 @@ module.exports = {
         white: '#ffffff',
         'th-primary': 'var(--primary)',
         'th-gray': 'var(--gray)',
-      },
-      animation: {
-        scaleSideBarNav: 'scaleSideBarNav 300ms ease-in-out forwards',
-        scaleComment: 'scaleComment 800ms ease',
-        slide: 'slide 800ms ease',
-      },
-      keyframes: {
-        scaleSideBarNav: {
-          '0%': { transform: 'scale(0)', opacity: '0' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
-        },
-      },
-      keyframes: {
-        scaleComment: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-      },
-      keyframes: {
-        slide: {
-          '0%': { transform: 'translateX(0)', opacity: '1' },
-          '100%': { transform: 'translateX(-100%)', opacity: '0' },
-        },
       },
     },
   },

@@ -15,14 +15,14 @@ const UniscoreLogo = ()=>{
             <path d="M18.3877 15.6167C21.0814 15.6167 23.265 13.433 23.265 10.7393C23.265 8.04565 21.0814 5.862 18.3877 5.862C15.694 5.862 13.5104 8.04565 13.5104 10.7393C13.5104 13.433 15.694 15.6167 18.3877 15.6167Z" fill="url(#paint1_linear_1_64)"/>
             <defs>
             <radialGradient id="paint0_radial_1_64" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.8413 28.1584) scale(27.039)">
-            <stop stop-color="#1E88E5"/>
-            <stop offset="0.7" stop-color="#0DCEB6"/>
-            <stop offset="1" stop-color="#07E5A6"/>
+            <stop stopColor="#1E88E5"/>
+            <stop offset="0.7" stopColor="#0DCEB6"/>
+            <stop offset="1" stopColor="#07E5A6"/>
             </radialGradient>
             <linearGradient id="paint1_linear_1_64" x1="12.9437" y1="6.29864" x2="22.2338" y2="13.884" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#1E88E5"/>
-            <stop offset="0.69" stop-color="#0DCEB6"/>
-            <stop offset="1" stop-color="#07E5A6"/>
+            <stop stopColor="#1E88E5"/>
+            <stop offset="0.69" stopColor="#0DCEB6"/>
+            <stop offset="1" stopColor="#07E5A6"/>
             </linearGradient>
             </defs>
         </svg>
