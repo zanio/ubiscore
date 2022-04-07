@@ -156,7 +156,7 @@ const Home: NextPage = () => {
 	        </div>
           <span className="text-label text-xs font-normal tracking-tight space-x-2">
           <span>Read and agree</span>   
-          <Link href={'/terms'}>
+          <Link href={'#'}>
             <a className={`text-blue-400 underline underline-offset-1`}>
               Terms and Conditions.
            </a>
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
 
          <div className="text-label text-xs font-normal tracking-tight space-x-2">
           <span>Already have an account? </span>   
-          <Link href={'/login'}>
+          <Link href={'#'}>
             <a className={`text-blue-400 underline underline-offset-1`}>
             LogIn
            </a>
