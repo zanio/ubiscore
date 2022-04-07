@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 
 import { Carousel } from 'react-responsive-carousel';
 
 
 const UbiScoreCarousel = ()=>{
+    const elementRef = useRef<any>(null);
+
+    useEffect(()=>{
+        const handler = () => {
+            if (elementRef.current) {
+             elementRef.current.querySelector('.control-dots').style.textAlign = "left";
+            }
+          };
+          handler();
+    },[])
+
+
+
     const renderCustomIndicator = (onClickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void, 
     isSelected: boolean, index: number, label: string):React.ReactNode =>{
       
@@ -24,8 +37,8 @@ const UbiScoreCarousel = ()=>{
 
     
     return (
-        <div className=" w-full eclipse-image bg-transparent bg-no-repeat">
-        <Carousel showThumbs={false} className='carousel-wrappers'  
+        <div ref={elementRef} className=" w-full eclipse-image bg-transparent bg-no-repeat">
+        <Carousel showThumbs={false} className='py-4'  
         showArrows={false} showStatus={false} autoPlay infiniteLoop 
         renderIndicator={renderCustomIndicator}>
             
@@ -51,7 +64,7 @@ const UbiScoreCarousel = ()=>{
             </div>
 
             <div className="flex flex-col space-y-3 text-left">
-                <h2 className="text-white font-bold text-xl">Aniefiok Akpan</h2>
+                <h2 className="text-white font-bold text-xl">Ani Akpan</h2>
                 <span className="text-base font-semibold text-white opacity-50">Senior Software Engineer</span>
                     
                     <p className="pt-4 font-light text-white text-base pb-16">
